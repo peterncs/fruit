@@ -16,5 +16,5 @@ for root, dirs, files in os.walk("../supplier-data/descriptions"):
                         "image_name": file_name.split(".")[0] + ".jpeg"
                         }
             #POST the dictionary to the webserver in JSON format
-            response = requests.post("http://35.222.32.9/fruits/", json=description)
+            response = requests.post("http://localhost/fruits/", json=description)
             response.raise_for_status()
