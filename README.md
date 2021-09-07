@@ -11,3 +11,5 @@ The purpose of the list of scripts:
 | emails.py | generates and send email |
 | report_email.py | generates and send email attached with the fruit catalog report |
 | health_checks.py | checks the health of the server, and send alert email if there is a problem |
+
+Since this project relies on the webserver provided by Google, which is not accessiable after the completion of the course, only changeImage.py and reports.py can be run.
