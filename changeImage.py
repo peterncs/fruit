@@ -6,7 +6,7 @@ import os, glob
 from PIL import Image
 
 #Loop through the image directory
-for image in glob.iglob(r"../supplier-data/images/*.tiff"):
+for image in glob.iglob(r"./supplier-data/images/*.tiff"):
 
     #Create Image object for processing
     with Image.open(image) as im:
@@ -18,5 +18,5 @@ for image in glob.iglob(r"../supplier-data/images/*.tiff"):
         new_im = im.resize((600, 400))
 
         #Convert and save the image into jpeg file
-        outfile = "../supplier-data/images/" + os.path.basename(image).split(".")[0] + ".jpeg"
+        outfile = "./supplier-data/images/" + os.path.basename(image).split(".")[0] + ".jpeg"
         new_im.save(outfile, "JPEG")
