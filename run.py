@@ -3,7 +3,7 @@ import os
 import requests
 
 #List all the files in /supplier-data/descriptions
-for root, dirs, files in os.walk("../supplier-data/descriptions"):
+for root, dirs, files in os.walk("./supplier-data/descriptions"):
     #Loop through the list of description files of fruits
     for file_name in files:
         with open(os.path.join(root,file_name)) as file:
